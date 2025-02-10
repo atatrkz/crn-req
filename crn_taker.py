@@ -9,7 +9,8 @@ payload = json.dumps({
   "ECRN": [
     "22661",
     "22662",
-    "22634"
+    "22634",
+    "22636"
   ],
   "SCRN": []
 })
@@ -48,6 +49,6 @@ print("Starting CRN taker script. Press Ctrl+C to stop.")
 try:
     while True:
         make_request()
-        time.sleep(1)  # Wait for 1 second before next request
+        time.sleep(3.5)  # Wait for 3.5 seconds before next request
 except KeyboardInterrupt:
     print("\nScript stopped by user.") 
