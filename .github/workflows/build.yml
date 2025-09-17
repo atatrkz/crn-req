@@ -16,7 +16,7 @@ jobs:
         include:
           - os: windows-latest
             output_name: ITU-CRN-Monitor.exe
-          - os: macos-12 # Use an older macOS runner for better compatibility
+          - os: macos-13 # Use an older macOS runner for better compatibility
             output_name: ITU-CRN-Monitor-mac
           - os: ubuntu-latest
             output_name: ITU-CRN-Monitor-linux
