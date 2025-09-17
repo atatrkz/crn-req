@@ -39,7 +39,7 @@ jobs:
         pip install pyinstaller requests
 
     - name: Build executable with PyInstaller
-      run: pyinstaller --onefile --windowed --name ITU-CRN-Monitor crn_monitor_gui.py
+      run: pyinstaller --onefile --windowed --name ITU-CRN-Monitor crn_taker_gui.py
 
     - name: Upload executable artifact
       uses: actions/upload-artifact@v4
