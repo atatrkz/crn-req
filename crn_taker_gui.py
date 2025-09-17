@@ -59,7 +59,7 @@ class CRNMonitorGUI:
         crn_frame.columnconfigure(1, weight=1)
         
         ttk.Label(crn_frame, text="CRNs to Add:").grid(row=0, column=0, sticky=tk.W, padx=(0, 10))
-        self.ecrn_var = tk.StringVar(value="22661, 22662, 22634, 22636")
+        self.ecrn_var = tk.StringVar(value="YOUR_CRN_1, YOUR_CRN_2, YOUR_CRN_3, YOUR_CRN_4")
         self.ecrn_entry = ttk.Entry(crn_frame, textvariable=self.ecrn_var, width=50)
         self.ecrn_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), pady=2)
         

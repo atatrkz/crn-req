@@ -6,8 +6,8 @@ from datetime import datetime
 from urllib.parse import urlparse, parse_qs
 
 # ---------------- USER CONFIG ----------------
-USERNAME = "turkoza18"
-PASSWORD = "Atezyuna9901"
+USERNAME = "YOUR_STUDENT_NUMBER"
+PASSWORD = "YOUR_OBS_PASSWORD"
 # ---------------------------------------------
 
 LOGIN_START_URL = "https://obs.itu.edu.tr/login/auth/login"
@@ -178,7 +178,7 @@ def make_crn_request(session: requests.Session, bearer_token: str):
     """Make the CRN registration request with proper authentication."""
     url = "https://obs.itu.edu.tr/api/ders-kayit/v21"
     payload = {
-        "ECRN": ["22661", "22662", "22634", "22636"],
+        "ECRN": ["YOUR_CRN_1", "YOUR_CRN_2", "YOUR_CRN_3", "YOUR_CRN_4"],
         "SCRN": []
     }
     
